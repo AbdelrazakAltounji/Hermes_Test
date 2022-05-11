@@ -21,6 +21,6 @@ Feature: Naviguer sur sit Hermes
 					Examples:
 					
 					| valeur1 |     valeur2    | valeur3 |  valeur4 | valeur5            | 
-					|"B01"    |"Y3003-Y01-012" |      "55" |   "125695" | "1-Resp/Whse/Prod" | 
+					|"B01"    |"Y3003-Y01-012" |      "55" |   "125696" | "1-Resp/Whse/Prod" | 
 									
 					 
