@@ -51,7 +51,7 @@ public class StepDefinitions {
 		
 		DesiredCapabilities capa = new DesiredCapabilities(); 
 		System.setProperty("webdriver.chrome.driver","C:\\Abdelrazak\\chromedriver.exe");
-		//capa.setBrowserName("edge");
+		capa.setBrowserName("chrome");
 		capa.setPlatform(Platform.ANY);
 		driver = new RemoteWebDriver(new URL("https://selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud"), capa);
 
@@ -73,8 +73,8 @@ public class StepDefinitions {
 	
 	
 	
-	//@And ("Dans le menu M3 je cherche le {string} pour avoir le code article")
-	//public void chercher_mot(String mot) {
+	@And ("Dans le menu M3 je cherche le {string} pour avoir le code article")
+	public void chercher_mot(String mot) {
 		
 	
 		//EventFiringWebDriver eventHand = new EventFiringWebDriver(driver);
@@ -93,17 +93,17 @@ public class StepDefinitions {
 		//element.submit();
 		//action.sendKeys(Keys.ENTER).perform();
 		//eventHand.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-	//}
-	
-	@And("Que appuie sur ENTRER")
-	public void checkTitle() throws MalformedURLException {
-		
-			
 		driver.get("https://mingle-portal.eu1.inforcloudsuite.com/IBM1_DEM/bd13039e-19fd-43d7-82e7-1df47470691e?favoriteContext=bookmark%3FMMS001%26fieldNames%3DW1OBKV%2C%2CW2OBKV%2C%2CWFSLC2%2C%2CWTSLC2%2C%2CWFSLC3%2C%2CWTSLC3%2C%26includeStartPanel%3DTrue%26source%3DMForms%26requirePanel%3DTrue%26sortingOrder%3D2%26view%3DA02-01%26panel%3DB%26tableName%3DMITMAS%26keys%3DMMCONO%2C770%2CMMITNO%2C%2B&LogicalId=lid://infor.m3.m3");
 		driver.switchTo().frame("m3h5_bd13039e-19fd-43d7-82e7-1df47470691e");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
+	
+	//@And("Que appuie sur ENTRER")
+	//public void checkTitle() throws MalformedURLException {
+		
+			
+		
+	//}
 			
 	@And("Que dans TpA = {string} et Code article = {string}")
 		public void remplir_champs(String valeur1 , String valeur2) throws MalformedURLException {
@@ -169,7 +169,7 @@ public class StepDefinitions {
 
 	  }
 	  
-	//  @And("Dans la liste droulante Ordre de tri, je sélectionne {string}")
+	//  @And("Dans la liste droulante Ordre de tri, je sÃ©lectionne {string}")
 	  //	public void verification(String valeur5) {
 		  
 		  
