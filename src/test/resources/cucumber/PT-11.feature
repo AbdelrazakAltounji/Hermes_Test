@@ -16,7 +16,7 @@ Feature: Naviguer sur sit Hermes
 						And Que je rentre, dans onglet qui saffiche, je tappe PMS170 et je clique sur le bouton OK			
 						And Que je rentre dans le champ produit : je colle la valeur2 et appuie sur le bouton Suivant
 						And Que je rempli les 3 champs:no programme <valeur4>,date de fin et qte planifie <valeur3> et je verifie les informations
-						And Dans la liste droulante Ordre de tri, je sélectionne <valeur5>
+						#And Dans la liste droulante Ordre de tri, je sélectionne <valeur5>
 
 					Examples:
 					
