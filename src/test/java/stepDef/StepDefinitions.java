@@ -46,14 +46,14 @@ public class StepDefinitions {
 	@Given("Que je suis sur le site")
 	public void visit_site_hermes() throws MalformedURLException {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Abdelrazak\\chromedriver.exe");
-		driver = new ChromeDriver();
-		
-		//DesiredCapabilities capa = new DesiredCapabilities(); 
 		//System.setProperty("webdriver.chrome.driver","C:\\Abdelrazak\\chromedriver.exe");
-		//capa.setBrowserName("chrome");
-		//capa.setPlatform(Platform.ANY);
-		//driver = new RemoteWebDriver(new URL("https://selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud"), capa);
+		//driver = new ChromeDriver();
+		
+		DesiredCapabilities capa = new DesiredCapabilities(); 
+		//System.setProperty("webdriver.chrome.driver","C:\\Abdelrazak\\chromedriver.exe");
+		capa.setBrowserName("chrome");
+		capa.setPlatform(Platform.ANY);
+		driver = new RemoteWebDriver(new URL("https://selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud"), capa);
 
 		
 	driver.get("https://mingle-portal.eu1.inforcloudsuite.com/IBM1_DEM/dd01c7cd-9f46-418c-be0a-9e5612067c74?favoriteContext=%7B%22type%22%3A%22page%22%2C%22id%22%3A%229d2e4bf6-eb67-42e9-856c-15415d03c3e6%22%2C%22source%22%3A7%7D&LogicalId=lid://infor.homepages.1");
