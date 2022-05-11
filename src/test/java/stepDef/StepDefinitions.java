@@ -164,8 +164,8 @@ public class StepDefinitions {
 
 		  driver.findElement(By.cssSelector(".inforFormButton.default")).click();
 		  //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		  driver.findElement(By.cssSelector(".inforTextbox.integerOnly.filterFld.numericOnly.alignRight")).sendKeys(Keys.chord(Keys.F12));
-		  driver.findElement(By.cssSelector(".inforTextbox.integerOnly.filterFld.numericOnly.alignRight")).sendKeys(Keys.chord(Keys.F12));
+		 // driver.findElement(By.cssSelector(".inforTextbox.integerOnly.filterFld.numericOnly.alignRight")).sendKeys(Keys.chord(Keys.F12));
+		  //driver.findElement(By.cssSelector(".inforTextbox.integerOnly.filterFld.numericOnly.alignRight")).sendKeys(Keys.chord(Keys.F12));
 
 	  }
 	  
