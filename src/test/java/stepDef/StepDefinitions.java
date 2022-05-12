@@ -181,6 +181,8 @@ public class StepDefinitions {
 			    	
 				    System.out.print("ERROR!!");
 				    driver.findElement(By.id("ERROR!"));
+				    driver.quit();
+					
 
 			    }
 			    
